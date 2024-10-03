@@ -33,7 +33,7 @@ const SearchBar = () => {
         <View style={styles.container}>
             {/* Search Input Field */}
             <View style={styles.searchBarContainer}>
-                <Icon name="ios-search" size={20} color="black" />
+                <Icon name="ios-search" size={20} color='black' />
                 <TextInput
                     style={styles.searchInput}
                     placeholder="Search recipes"
@@ -54,6 +54,9 @@ const SearchBar = () => {
                     )}
                 />
             )}
+
+
+        
         </View>
     );
 };
@@ -67,7 +70,7 @@ const styles = StyleSheet.create({
     searchBarContainer: {
         flexDirection: 'row',
         alignItems: 'center',
-        backgroundColor: 'white',
+        backgroundColor: 'black',
         borderRadius: 10,
         padding: 1,
         marginBottom: 5,
@@ -91,5 +94,12 @@ const styles = StyleSheet.create({
         fontSize: 18,
         color: 'black'
     },
+    trendingnow:{
+        color:'black',
+        fontSize:25,
+        alignItems:'flex-start',
+        fontWeight:'bold',
+        paddingTop:20
+    }
 });
 export default SearchBar;
