@@ -33,7 +33,7 @@ const SearchBar = () => {
         <View style={styles.container}>
             {/* Search Input Field */}
             <View style={styles.searchBarContainer}>
-                <Icon name="ios-search" size={20} color='black' />
+               
                 <TextInput
                     style={styles.searchInput}
                     placeholder="Search recipes"
@@ -65,18 +65,21 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         padding: 20,
-        color: 'black'
+        color: 'black',
+        position:'static'
     },
     searchBarContainer: {
         flexDirection: 'row',
         alignItems: 'center',
         backgroundColor: 'black',
         borderRadius: 10,
-        padding: 1,
+        padding: 2,
         marginBottom: 5,
         color: 'black',
         borderColor: 'grey',
-        borderWidth: 1
+        borderWidth: 1,
+        position:'absolute'
+        
     },
     searchInput: {
         flex: 1,
